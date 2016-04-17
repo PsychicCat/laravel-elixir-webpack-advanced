@@ -87,7 +87,7 @@ const webpack_config = {
             },
             {
                 test: /\.less$/,
-                loader: ExtractTextPlugin.extract(['css', 'postcss', 'resolve-url', 'less?sourceMap'])
+                loader: ExtractTextPlugin.extract('css?sourceMap!' + 'less?sourceMap')
             },
             {
                 test: /\.(sass|scss)$/,
