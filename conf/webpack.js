@@ -39,7 +39,7 @@ const webpack_config = {
             }
         }),
         new webpack.NoErrorsPlugin(),
-        new ExtractTextPlugin(`${filenamePattern}.css`, {allChunks: true}),
+        new ExtractTextPlugin(`../styles/[name].css`, {allChunks: true}),
         new BowerWebpackPlugin({
             excludes: [/.*\.less$/, /^.+\/[^\/]+\/?\*$/]
         }),
