@@ -125,7 +125,7 @@ const webpack_config = {
                 exclude: /\/(node_modules|bower_components)\//,
                 loader: 'file',
                 query: {
-                    name: `[path]${filenamePattern}.[ext]`
+                    name: '../images/background/[name].[ext]' 
                 }
             }
         ]
